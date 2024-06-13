@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Contacto</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        form {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input, textarea, select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        input[type="submit"] {
+            background-color: #4caf50;
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <form method="get" action="backend/form.php">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Su Nombre" required>
+
+        <label for="correo">Correo electrónico:</label>
+        <input type="email" id="correo" name="correo" value="@gmail.com" required>
+
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+        <select name="pais" multiple required>
+            <option value="es">España</option>
+            <option value="co">Colombia</option>
+            <option value="pe">Peru</option>
+            <option value="mx">Mexico</option>
+            <option value="ch">Chile</option>
+            <option value="ar">Argentina</option>
+            <option value="cu">Cuba</option>
+            <option value="pu">Puerto Rico</option>
+        </select>
+
+        <input type="submit" value="Enviar">
+
+    </form>
+
+     <form method="" action="">
+        <!--Botones de radio-->
+        <input type="radio" name="comida" value="Arroz" id="Arroz">
+        <label for="pollo">pollo</label>
+        <input type="radio" name="comida" value="pollo" id="pollo">
+        <label for="Arroz">Arroz</label>
+        
+        <!--CHECKBOX-->
+        <input type="checkbox" name="terminos" value="yes" id="terminos">
+        <label for="terminos">acepto los terminos y condiciones.</label>
+
+        <!--Rangos-->
+        <input type="range" name="porcentaje" min="0" max="100"/>
+
+        <!--TEXTAREA-->
+        <textarea name="comentario" cols="30" rows="10" minlength="10" maxlength="500"
+        placeholder="Escribe aqui tu comentario.."></textarea>
+
+        <!--VALIDACIONES (required)-->
+
+        <!--ENVIOS-->
+        <textarea name="comentario" cols="30" rows="10" minlength="10" maxlength="500"
+        placeholder="Escribe aqui tu comentario.." required></textarea>
+
+        <input type="submit" value="Enviar">
+
+    </form>
+
+</body>
+</html>
+
+
+<!-- Formularios: -->
+
+<form>: <!--Define un formulario.-->
+
+<input>: <!--Define un campo de entrada (puede tener diferentes tipos
+         como texto, contraseña, checkbox, etc.).-->
+
+<textarea>: <!--Define un área de texto para la entrada de múltiples líneas.-->
+
+<select>: <!--Define un menú desplegable (lista de opciones).-->
+
+<option>: <!--Define una opción dentro de un menú desplegable.-->
+
+<label>: <!--Etiqueta para describir un elemento de formulario, 
+         generalmente se vincula a un campo de entrada mediante el atributo for.-->
+
+<!--<select>:
+Este elemento define una lista desplegable donde los usuarios pueden seleccionar una o varias opciones.
+
+name="pais":
+El atributo name asigna un nombre al elemento <select>. Este nombre se utiliza cuando se envían los datos del formulario al servidor. En este caso, el nombre es "pais".
+
+multiple:
+El atributo multiple permite a los usuarios seleccionar más de una opción de la lista. Si no se incluye este atributo, solo se puede seleccionar una opción a la vez.
+
+required:
+El atributo required indica que el usuario debe seleccionar al menos una opción antes de enviar el formulario. Si intentan enviar el formulario sin seleccionar una opción, se les mostrará un mensaje de error.
+
+<option>:
+Cada elemento <option> define una opción en la lista desplegable. El atributo value especifica el valor que se enviará al servidor cuando se selecciona esa opción. El texto dentro de la etiqueta <option> es lo que se mostrará en la lista desplegable.-->
+
+<!--La razón por la que los valores de los atributos for, name e id son los mismos en este caso específico es para establecer una relación entre la etiqueta <label> y el elemento <input> en el formulario
+    En resumen, la consistencia de valores entre id y for en este caso específico se realiza para establecer una conexión directa y mejorar la accesibilidad y la usabilidad del formulario..-->
+
+<p>El atributo action contiene la ruta donde se encuentra el archivo
+   que va a procesar esos datos.
+
+   el atributo method lo que hace es que contiene un verbo que indica como
+   viajaran los datos al fichero o la funcion del fichero que los va a procesar.
+   como por ejemplo GET para enviar informacion no sensible o POST que no sera visto
+   por terceros yy siendo informacion sensible como contraseñas y credenciales etc..
+   hay mucos mas funciones en method pero esa son las principales.
+</p>
+
+<p>Existen varios tipos de datos en <input type="password"/></p>
+<input type="date"/>
+<input type="email"/>
+<input type="number"/>
+
+
+</body>
+</html>

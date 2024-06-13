@@ -1,0 +1,6 @@
+Recursos
+
+1. Pexels (para descargar imagenes)
+2. https://tinypng.com/ (mejora el tamaño de las imagenes)
+3. Verexif (Retira metadatos de las imagenes, recomendado para fotos tomada de un dispositivo o una camara)
+4. El tamaño promedio para una pagina web es de (75-100 kb como maximo)

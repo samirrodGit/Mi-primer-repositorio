@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video</title>
+</head>
+<body>
+    <main>
+        <section>
+            <!--1 video-->
+            <video src="./Quizizz Synthwave Theme Original, High Quality.mp4" width="250px" height="350px"><p>Tu navegador no soporta el elemento de video.</p></video>
+
+            <!--Varios videos-->
+
+            <video controls autoplay loop width="50%" height="70%">
+                <source src="Quizizz Synthwave Theme Original, High Quality.mp4" type="video/mp4"/>
+                <source src="Quizizz Synthwave Theme Original, High Quality.ogg" type="video/ogg"/>
+                <source src="Quizizz Synthwave Theme Original, High Quality.webm" type="video/webm"/>
+                <p>Tu navegador no soporta el elemento de video.</p>
+            </video>
+
+            <p>En este caso, el navegador intentará reproducir el archivo "video.mp4" primero.
+               Si el navegador no es compatible con ese formato, intentará con "video.webm" 
+               y luego con "video.ogv".</p>
+           
+            <p> usar la etiqueta source dentro de video permite una mayor flexibilidad al proporcionar
+                varios formatos de video para adaptarse a la compatibilidad del navegador. Sin embargo,
+                si solo necesitas un formato y estás seguro de que todos los navegadores objetivo lo admiten,
+                el enfoque más simple con src directamente en video podría ser suficiente.</p>
+           
+        </section>
+    </main>
+</body>
+</html>

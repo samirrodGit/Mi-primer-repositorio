@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú del Restaurante</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .menu-container {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .menu-header {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .menu-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        .menu-table th, .menu-table td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: left;
+        }
+
+        .menu-table caption {
+            /* Cambia el color del caption */
+            color: #4e3631; /* Puedes cambiar este valor a tu color preferido */
+            font-weight: bold;
+            font-size: 1.2em; /* Tamaño de fuente ajustado */
+            padding: 10px;
+            text-align: center;
+            border-bottom: 2px solid #333; /* Añade un borde inferior para compensar el cambio de tamaño */
+            margin-bottom: 10px; /* Añade margen inferior para espacio visual */
+        }
+
+        .menu-footer {
+            font-weight: bold;
+            text-align: center;
+            padding: 10px;
+        }
+
+        /* Agregamos colores a las filas de la tabla */
+        .menu-table tbody tr:nth-child(odd) {
+            background-color: #f9f9f9;
+        }
+
+        .menu-table tbody tr:nth-child(even) {
+            background-color: #e0e0e0;
+        }
+
+        .menu-table tfoot tr {
+            background-color: #ccc;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="menu-container">
+        <div class="menu-header">
+            <h1>Menú del Restaurante</h1>
+        </div>
+
+        <table class="menu-table">
+            <caption>Platos Principales</caption> <!--Proporciona un título para una tabla-->
+            <thead> <!--define el encabezado de una tabla-->
+                <tr>
+                    <th>Plato</th> <!-- Encabezado de la columna "Plato" -->
+                    <th>Descripción</th> <!-- Encabezado de la columna "Descripción" -->
+                    <th>Precio</th> <!-- Encabezado de la columna "Precio" -->
+                </tr>
+            </thead>
+            <tbody> <!--define el contenido principal de una tabla osea el cuerpo donde estan las filas-->
+                <tr>
+                    <td rowspan="2">Combinado Italiano</td> <!-- Celda combinada en la columna "Plato" -->
+                    <td>Spaghetti Bolognese</td> <!-- Celda en la columna "Descripción" -->
+                    <td>$12.99</td> <!-- Celda en la columna "Precio" -->
+                </tr>
+                <tr>
+                    <td>Pizza Margherita</td>
+                    <td>$14.99</td>
+                </tr>
+                <tr>
+                    <td>Hamburguesa Deluxe</td>
+                    <td>Carne, queso, lechuga, tomate, salsa especial.</td>
+                    <td>$9.99</td>
+                </tr>
+                <tr> <!--define una fila de una tabla-->
+                    <td>Ensalada de Pollo</td>
+                    <td>Pollo a la parrilla, mix de verduras, aderezo ranch.</td>
+                    <td>$8.99</td>
+                </tr>
+                <!-- Agrega más platos aquí -->
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="2">Total</td> <!-- Celda combinada en las columnas "Plato" y "Descripción" -->
+                    <td>$46.96</td> <!-- Celda en la columna "Precio" -->
+                </tr>
+            </tfoot> <!--define las filas de pie de una tabla-->
+        </table>
+
+        <div class="menu-footer">
+            <p>¡Disfruta de tu comida en nuestro restaurante!</p>
+        </div>
+    </div>
+
+</body>
+</html>
+
+
+
