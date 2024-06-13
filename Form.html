@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+
+    <style>
+        label,
+        input,
+        textarea,
+        select {
+            margin-bottom: 20px;
+            display: block;
+        }
+
+        option[value="social"] {
+            margin-bottom: 10px;
+            /* Ajusta el valor según sea necesario */
+        }
+
+        input[type="submit"] {
+            margin-top: 20px;
+            /* Añade un margen superior al botón de submit */
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+    <form action="" method="post">
+        <h1>Registrar usuario</h1>
+
+        <label for="registro">Registrar usuario:</label>
+        <input id="registro" type="text" name="registro" placeholder="Su nombre" />
+
+        <label for="email">Email:</label>
+        <input id="email" type="email" name="email" />
+
+        <label for="password">Contraseña:</label>
+        <input id="password" type="password" name="password" />
+
+        <label for="repeat">Repite Contraseña:</label>
+        <input id="repeat" type="password" name="repeat" />
+
+        <label for="Fecha_Nacimiento">Fecha de nacimiento:</label>
+        <input id="Fecha_Nacimiento" type="date" name="Fecha_Nacimiento" />
+
+        <label for="comment">Cuenta algo sobre ti:</label>
+        <textarea id="comment" name="comment" rows="4" cols="50"></textarea>
+
+
+        <label for="seleccionar">Selecciona una opción:</label>
+        <select id="seleccion" name="seleccion" required>
+            <option value="" disabled selected>Selecciona una opción</option>
+            <option value="Youtube">Youtube</option>
+            <option value="Google">Google</option>
+            <option value="social">Redes Sociales</option>
+        </select>
+
+
+        <input type="submit" value="Registrarme">
+
+
+
+    </form>
+
+</body>
+
+</html>
